@@ -12,5 +12,8 @@ describe("Calculation comma test", ()=>{
     });
     it("should return sum by replacing newline with commas", ()=>{
         expect(add("1\n2,3")).toBe(6)
+    });
+    it("should handle delimiter and return sum by following above test cases as well", ()=>{
+        expect(add("//;\n1;2")).toBe(3)
     })
 });
