@@ -3,12 +3,14 @@
     "jsx": "react-jsx",  // or "react" if you are using an older version of React
     "module": "esnext",
     "target": "esnext",
+    "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "moduleResolution": "node",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": ["jest", "@testing-library/jest-dom"],
   },
   "files": [],
   "references": [
