@@ -15,5 +15,8 @@ describe("Calculation comma test", ()=>{
     });
     it("should handle delimiter and return sum by following above test cases as well", ()=>{
         expect(add("//;\n1;2")).toBe(3)
-    })
+    });
+    it("should not allow negative numbers", () => {
+        expect(() => add("1,-2,3,-4")).toThrow("Negative numbers not allowed: -2, -4")
+    });
 });
