@@ -1,5 +1,5 @@
 
-export function add(numbers:string):any {
+export function add(numbers:string):number {
   if(!numbers) return 0;
 
   //for negative values in numbers string handling.
