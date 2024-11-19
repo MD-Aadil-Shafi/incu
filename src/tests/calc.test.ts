@@ -9,5 +9,8 @@ describe("Calculation comma test", ()=>{
     });
     it("should return sum of comma separated", ()=>{
         expect(add("1,2,3")).toBe(6)
+    });
+    it("should return sum by replacing newline with commas", ()=>{
+        expect(add("1\n2,3")).toBe(6)
     })
 });
